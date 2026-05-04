@@ -1,0 +1,113 @@
+:root {
+  --bg: #0f380f;
+  --frame: #306230;
+  --light: #8bac0f;
+  --mid: #9bbc0f;
+  --dark: #0f380f;
+  --text: #e8f8b0;
+  --btn: #3a3a3a;
+  --btn-shadow: #1f1f1f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(#cadc9f, #8bac0f);
+  color: #102010;
+}
+
+.app {
+  max-width: 680px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.screen-wrap {
+  background: var(--frame);
+  border-radius: 1rem;
+  padding: 0.75rem;
+  box-shadow: inset 0 0 0 2px #193519;
+}
+
+.screen {
+  min-height: 42dvh;
+  border-radius: 0.6rem;
+  background: var(--light);
+  color: var(--dark);
+  padding: 0.75rem;
+  outline: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 1rem;
+}
+
+.swipe-pad {
+  aspect-ratio: 1;
+  max-width: 240px;
+  width: min(48vw, 240px);
+  border-radius: 1rem;
+  background: radial-gradient(circle at center, #d7e8aa, #9bbc0f);
+  border: 3px solid #5c7f10;
+  box-shadow: inset 0 0 0 2px #c5da84;
+  position: relative;
+  display: grid;
+  place-items: center;
+  touch-action: none;
+  user-select: none;
+}
+
+.pad-label {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+.ab-cluster {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-18deg);
+}
+
+.gb-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+  background: var(--btn);
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: 0 6px 0 var(--btn-shadow);
+}
+
+.gb-btn:active,
+.gb-btn.active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 var(--btn-shadow);
+}
+
+.status {
+  background: rgba(255,255,255,0.6);
+  border-radius: 0.7rem;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 420px) {
+  .gb-btn { width: 64px; height: 64px; }
+  .controls { grid-template-columns: 1fr; justify-items: center; }
+}
