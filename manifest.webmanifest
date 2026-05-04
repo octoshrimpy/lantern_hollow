@@ -5,6 +5,5 @@
   "display": "standalone",
   "background_color": "#1a1c2c",
   "theme_color": "#1a1c2c",
-  "description": "Mobile UX prototype with swipe movement and A/B controls.",
-  "icons": []
+  "description": "Mobile UX prototype with swipe movement and A/B controls."
 }
