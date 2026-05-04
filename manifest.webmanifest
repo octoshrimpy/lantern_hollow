@@ -1,0 +1,16 @@
+{
+  "name": "Lantern Hollow Mobile Controls",
+  "short_name": "LanternMobile",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#9bbc0f",
+  "theme_color": "#9bbc0f",
+  "description": "PWA control shell with swipe movement and Gameboy-style A/B buttons.",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%239bbc0f'/%3E%3Ccircle cx='96' cy='96' r='52' fill='%230f380f'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
