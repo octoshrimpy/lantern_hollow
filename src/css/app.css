@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "UnifontExMono";
+  src: url("https://stgiga.github.io/UnifontEX/UnifontExMono.woff2") format("woff2");
+}
+
+:root {
+  --sw0: #1a1c2c; --sw5: #a7f070; --sw12: #f4f4f4; --sw13: #94b0c2; --sw15: #333c57;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: "UnifontExMono", "Noto Sans", monospace;
+  background: var(--sw0); color: var(--sw12);
+}
+.app { max-width: 860px; margin: 0 auto; min-height: 100dvh; padding: 1rem; display: grid; gap: 0.8rem; }
+.topbar { display:flex; gap:.5rem; align-items:center; }
+input, button { font: inherit; background: var(--sw15); color: var(--sw12); border:1px solid var(--sw13); border-radius: .35rem; padding: .35rem .5rem; }
+.screen { white-space: pre; overflow: auto; min-height: 58dvh; border: 1px solid var(--sw13); padding: .75rem; background: #101321; }
+.controls { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+.swipe-pad { flex:1; min-height:110px; border:1px dashed var(--sw13); border-radius:.7rem; display:grid; place-items:center; touch-action:none; color: var(--sw5); }
+.ab { display:flex; gap: .6rem; }
+.action { width:74px; height:74px; border-radius: 999px; }
+.action.active { transform: scale(.96); }
