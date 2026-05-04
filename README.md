@@ -19,4 +19,4 @@ Then open `http://localhost:8080`.
 
 A workflow is configured at `.github/workflows/pages.yml`.
 
-Deployment triggers on pushes to `master`.
+Deployment triggers on pushes to `main`.
