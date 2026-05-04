@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#9bbc0f" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lantern Hollow Mobile Controls</title>
+  </head>
+  <body>
+    <main class="app" aria-label="Game viewport and controls">
+      <section class="screen-wrap" aria-label="Game viewport">
+        <div id="screen" class="screen" tabindex="0" role="application" aria-label="Game screen"></div>
+      </section>
+
+      <section class="controls" aria-label="Gameboy style controls">
+        <div id="swipePad" class="swipe-pad" tabindex="0" role="button" aria-label="Swipe for movement. Swipe and hold for continuous movement.">
+          <span class="pad-label">Swipe</span>
+        </div>
+
+        <div class="ab-cluster" aria-label="Action buttons">
+          <button id="btnB" class="gb-btn b" aria-keyshortcuts="Escape" type="button">B</button>
+          <button id="btnA" class="gb-btn a" aria-keyshortcuts="Enter" type="button">A</button>
+        </div>
+      </section>
+
+      <section class="status" aria-live="polite">
+        <p><strong>Last input:</strong> <span id="lastInput">none</span></p>
+        <p><strong>Mapped keys:</strong> A = Enter, B = Escape, Swipe = Arrow keys</p>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
